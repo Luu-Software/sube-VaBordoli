@@ -7,7 +7,50 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 6-12 km	    | $ 855.97		          | $ 1360.99
 12-27 km	  | $ 917.24		          | $ 1458.41
 */
-
+<script defer src="main.js"></script>
 boton.addEventListener("click", () => {
-  // COMPLETAR
+let reg; 
+let km; 
+let precio;
+
+reg = registrada.value
+km = distancia.value
+
+if (reg === "si") { 
+    if ( km <= 3) {
+      precio = 715.24
+    }
+    else if ( km <= 6) {
+      precio = 794.74
+    }  
+    else if ( km <= 12) {
+      precio = 855.97
+    }
+    else if ( km <= 27) {
+       precio = 917.24
+    } else {
+       precio = FUERA DE ZONA
+    }
+}
+
+if (reg === "no") {
+  if ( km <= 3) {
+    precio = 1137.23
+  }
+  else if ( km <= 6) {
+    precio = 1263.64
+  }  
+  else if ( km <= 12) {
+    precio = 1360.99
+  }
+  else if ( km <= 27) {
+     precio = 1458.41
+  } else {
+     precio = FUERA DE ZONA
+  }
+
+}
+
+tarifa.innerText = precio; 
+
 });
