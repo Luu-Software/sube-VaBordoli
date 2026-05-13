@@ -29,11 +29,12 @@ if (reg === "si") {
     else if ( km <= 27) {
        precio = 917.24
     } else {
-       precio = "FUERA DE ZONA"
+       precio = "67"
     }
 }
 
-if (reg === "no") {
+else {
+ 
   if ( km <= 3) {
     precio = 1137.23
   }
@@ -46,7 +47,7 @@ if (reg === "no") {
   else if ( km <= 27) {
      precio = 1458.41
   } else {
-     precio = "FUERA DE ZONA"
+     precio = "67"
   }
 
 }
