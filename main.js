@@ -7,8 +7,10 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 6-12 km	    | $ 855.97		          | $ 1360.99
 12-27 km	  | $ 917.24		          | $ 1458.41
 */
-<script defer src="main.js"></script>
 boton.addEventListener("click", () => {
+
+
+
 let reg; 
 let km; 
 let precio;
