@@ -14,7 +14,9 @@ boton.addEventListener("click", () => {
 let reg; 
 let km; 
 let precio;
+let lug; 
 
+lug = lugar.value
 reg = registrada.value
 km = distancia.value
 
